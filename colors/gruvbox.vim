@@ -395,6 +395,7 @@ endfunction
 " memoize common hi groups
 call s:HL('GruvboxFg0', s:fg0)
 call s:HL('GruvboxFg1', s:fg1)
+call s:HL('GruvboxFg1Bold', s:fg1, s:none, s:bold)
 call s:HL('GruvboxFg2', s:fg2)
 call s:HL('GruvboxFg3', s:fg3)
 call s:HL('GruvboxFg4', s:fg4)
@@ -549,19 +550,19 @@ call s:HL('Todo', s:vim_fg, s:vim_bg, s:bold . s:italic)
 call s:HL('Error', s:red, s:vim_bg, s:bold . s:inverse)
 
 " Generic statement
-hi! link Statement GruvboxRed
+hi! link Statement GruvboxBlue
 " if, then, else, endif, swicth, etc.
-hi! link Conditional GruvboxRed
+hi! link Conditional GruvboxBlue
 " for, do, while, etc.
-hi! link Repeat GruvboxRed
+hi! link Repeat GruvboxBlue
 " case, default, etc.
-hi! link Label GruvboxRed
+hi! link Label GruvboxBlue
 " try, catch, throw
-hi! link Exception GruvboxRed
+hi! link Exception GruvboxBlue
 " sizeof, "+", "*", etc.
 hi! link Operator Normal
 " Any other keyword
-hi! link Keyword GruvboxRed
+hi! link Keyword GruvboxBlue
 
 " Variable name
 hi! link Identifier GruvboxBlue
@@ -926,12 +927,12 @@ hi! link pythonBuiltin GruvboxOrange
 hi! link pythonBuiltinObj GruvboxOrange
 hi! link pythonBuiltinFunc GruvboxOrange
 hi! link pythonFunction GruvboxAqua
-hi! link pythonDecorator GruvboxRed
+hi! link pythonDecorator GruvboxAqua
 hi! link pythonInclude GruvboxBlue
 hi! link pythonImport GruvboxBlue
 hi! link pythonRun GruvboxBlue
 hi! link pythonCoding GruvboxBlue
-hi! link pythonOperator GruvboxRed
+hi! link pythonOperator GruvboxBlue
 hi! link pythonExceptions GruvboxPurple
 hi! link pythonBoolean GruvboxPurple
 hi! link pythonDot GruvboxFg3
